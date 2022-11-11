@@ -7,7 +7,6 @@ import reminder from "./images/icon-reminders.svg";
 import plan from "./images/icon-planning.svg";
 import arrowDown from "./images/icon-arrow-down.svg";
 import arrowUp from "./images/icon-arrow-up.svg";
-import Overlay from "./Overlay";
 
 function NavBar({ clickFunction }) {
   const [isClicked, setIsClicked] = useState(false);
