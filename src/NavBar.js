@@ -20,13 +20,13 @@ function NavBar() {
     e.preventDefault();
   };
   return (
-    <nav className=" py-4  font-Epilogue  text-MediumGray    ">
-      <div className="flex justify-between w-[100%] ">
+    <nav className=" py-4  flex items-center font-Epilogue  text-MediumGray    ">
+      <img src={logo} alt="" />
+      <div className="flex justify-between w-[100%]  ">
         <div className="flex gap-3">
-          <img src={logo} alt="" />
-          <ul className="relative ml-10 md:flex gap-10 hidden ">
+          <ul className="relative ml-10 md:flex md:items-center gap-10 hidden ">
             <li>
-              <a onClick={handleClick} href="">
+              <a className=" text-AlmostBlack" onClick={handleClick} href="">
                 Features{" "}
                 {isClicked ? (
                   <span onClick={handleClick} className="inline-block">
@@ -45,28 +45,28 @@ function NavBar() {
                       {" "}
                       <div className="flex gap-2 items-center">
                         <img src={todo} alt="" />
-                        <h2>Todo List</h2>
+                        <a href="#">Todo List</a>
                       </div>
                     </li>
                     <li>
                       {" "}
                       <div className="flex gap-2 items-center">
                         <img src={calendar} alt="" />
-                        <h2>Calendar</h2>
+                        <a href="#">Calendar</a>
                       </div>
                     </li>
                     <li>
                       {" "}
                       <div className="flex gap-2 items-center">
                         <img src={reminder} alt="" />
-                        <h2>Reminders</h2>
+                        <a href="#">Reminders</a>
                       </div>
                     </li>
                     <li>
                       {" "}
                       <div className="flex gap-2 items-center">
                         <img src={plan} alt="" />
-                        <h2>Planning</h2>
+                        <a href="#">Planning</a>
                       </div>
                     </li>
                   </ul>
@@ -74,7 +74,11 @@ function NavBar() {
               )}
             </li>
             <li>
-              <a onClick={handleClickCompany} href="#">
+              <a
+                className=" hover:text-AlmostBlack"
+                onClick={handleClickCompany}
+                href="#"
+              >
                 Company{" "}
                 {isClickedCompany ? (
                   <span onClick={handleClickCompany} className="inline-block">
@@ -103,16 +107,22 @@ function NavBar() {
               )}
             </li>
             <li>
-              <a href="#">Careers</a>
+              <a className=" hover:text-AlmostBlack" href="#">
+                Careers
+              </a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a className=" hover:text-AlmostBlack" href="#">
+                About
+              </a>
             </li>
           </ul>
         </div>
-        <div className="md:flex hidden gap-8 items-center">
-          <h3>Login</h3>
-          <button className="   ">Register</button>
+        <div className="md:flex h-[50px] text-MediumGray hidden gap-8 items-center">
+          <h3 className=" cursor-pointer hover:text-AlmostBlack ">Login</h3>
+          <button className=" border-2 hover:text-AlmostBlack border-MediumGray px-4 py-2 rounded-[15px]  ">
+            Register
+          </button>
         </div>
         <button className=" md:hidden">
           <img src={menu} alt="" />

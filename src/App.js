@@ -9,7 +9,7 @@ import make from "./images/client-maker.svg";
 
 function App() {
   return (
-    <main className=" bg-MediumGray2 font-Epilogue  ">
+    <main className=" h-[100vh] bg-MediumGray2 font-Epilogue  ">
       <div className=" mx-auto w-[375px] md:w-[1440px]  container">
         <NavBar />
         <div className=" grid md:grid-cols-2 mt-4 md:gap-4  ">
@@ -27,7 +27,7 @@ function App() {
               Get your team in sync, no matter your location. Streamline
               processes, create team rituals, and watch productivity soar.
             </p>
-            <button className=" hover:bg-transparent font-[800] font-Epilogue border-[1px] border-AlmostBlack hover:text-AlmostBlack bg-AlmostBlack md:justify-self-start text-AlmostWhite rounded-[10px] mt-4 py-4 px-4 md:py-3 md:mt-10 md:w-[20%] mx-auto md:mx-0 w-[40%] md:mb-20 ">
+            <button className=" hover:bg-transparent  md:duration-300 font-[800] font-Epilogue border-[1px] border-AlmostBlack hover:text-AlmostBlack bg-AlmostBlack md:justify-self-start text-AlmostWhite rounded-[10px] mt-8 py-4 px-4 md:py-3 md:mt-10 md:w-[20%] mx-auto md:mx-0 w-[40%] md:mb-20 ">
               Learn more
             </button>
             <div className=" flex gap-10  justify-center items-center mt-[4rem] md:justify-start md:gap-[4rem] md:mt-20 ">
