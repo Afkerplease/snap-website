@@ -15,7 +15,7 @@ function App() {
     setMenuClicked(!menuClicked);
   };
   return (
-    <main className="  relative h-[100vh] bg-MediumGray2 font-Epilogue  ">
+    <main className="  relative h-[100%] bg-MediumGray2 font-Epilogue  ">
       <div className=" mx-auto w-[375px] md:w-[1440px]  container">
         {menuClicked && <Overlay clickFunction={handleMenuClicked} />}
         <NavBar clickFunction={handleMenuClicked} />
